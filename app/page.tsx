@@ -13,6 +13,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import MyTimeline from "@/components/MyTimeline";
 
 import { motion } from "framer-motion";
 
@@ -69,7 +70,7 @@ const Home = () => {
             >
               <Experience/>
             </Vortex>
-
+            
           {/* <div className="max-w-7xl"> 
             <Projects/>
   
