@@ -1,4 +1,4 @@
-export const items = [
+export const gridItems = [
     {
       id: 1,
       title: "I prioritize client collaboration, fostering open communication ",

@@ -31,4 +31,5 @@ export const projects = [
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "/ui.apple.com",
     },
+    
   ];

@@ -1,33 +1,83 @@
 "use client";
 
-// import { navItems } from "@/data";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-// import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import { navItems } from "@/data/navItems";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+
+import { Vortex } from "@/components/ui/vortex";
+import { AuroraBackground } from "../components/ui/aurora-background"
+import { Spotlight } from "@/components/ui/Spotlight";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+
+import { motion } from "framer-motion";
+
+// import Grid from "@/components/Grid";
 // import Footer from "@/components/Footer";
 // import Clients from "@/components/Clients";
 // import Approach from "@/components/Approach";
-// import Experience from "@/components/Experience";
+
 // import RecentProjects from "@/components/RecentProjects";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div>
+          <FloatingNav navItems={navItems} />
+            
+            
+            <Hero/>
 
-        {/* <FloatingNav navItems={navItems} /> */}
-        <Hero/>
-        <div className="max-w-7xl w-full">
-        {/* <Grid /> */}
-        {/* <RecentProjects /> */}
-        {/* <Clients /> */}
-        {/* <Experience /> */}
-        {/* <Approach /> */}
-        {/* <Footer />  */}
-        </div>
-    </main>
-  );
+            <Vortex
+              backgroundColor="black"
+              rangeY={800}
+              particleCount={500}
+              baseHue={120}
+              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+            >
+              <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
+            </Vortex>
+            <Vortex
+              backgroundColor="black"
+              rangeY={800}
+              particleCount={500}
+              baseHue={120}
+              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+            >
+              <Projects/>
+            </Vortex>
+            
+            <Vortex
+              backgroundColor="black"
+              rangeY={800}
+              particleCount={500}
+              baseHue={120}
+              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+            >
+              <TextGenerateEffect words="All of my Work Experience" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
+            </Vortex>
+
+            <Vortex
+              backgroundColor="black"
+              rangeY={800}
+              particleCount={500}
+              baseHue={120}
+              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+            >
+              <Experience/>
+            </Vortex>
+
+          {/* <div className="max-w-7xl"> 
+            <Projects/>
+  
+          </div> */}
+      </div>
+  )
 };
 
 export default Home;
+
+        

@@ -13,9 +13,32 @@ export default {
   theme: {
     extend: {
       animation: {
+        // ////////////////////////////////////////////////////////////////////////////////////////
+        shimmer: "shimmer 2s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        aurora: "aurora 60s linear infinite",
       },
       keyframes: {
+        /////////////////////////////////////////////////////////////////////////////////////////
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+        // ////////////////////////////////////////////////////////////////////////////////////////
+
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+        // ////////////////////////////////////////////////////////////////////////////////////////
         spotlight: {
           "0%": {
             opacity: 0,//dont mind the error message here
