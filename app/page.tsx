@@ -16,6 +16,7 @@ import Experience from "@/components/Experience";
 import MyTimeline from "@/components/MyTimeline";
 
 import { motion } from "framer-motion";
+import { main } from "framer-motion/client";
 
 // import Grid from "@/components/Grid";
 // import Footer from "@/components/Footer";
@@ -26,59 +27,44 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-        <div>
-          <FloatingNav navItems={navItems} />
-            
-            
-            <Hero/>
+    <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
+    <Vortex
+      backgroundColor="black"
+      rangeY={1800}
+      particleCount={750}
+      baseHue={120}
+      className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+      // flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full
+      // flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full
+      // flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full
+      //relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5
+      //flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full
+    > 
+    <br/>
 
-            <Vortex
-              backgroundColor="black"
-              rangeY={800}
-              particleCount={500}
-              baseHue={120}
-              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-            >
-              <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
-            </Vortex>
-            <Vortex
-              backgroundColor="black"
-              rangeY={800}
-              particleCount={500}
-              baseHue={120}
-              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-            >
-              <Projects/>
-            </Vortex>
-            
-            <Vortex
-              backgroundColor="black"
-              rangeY={800}
-              particleCount={500}
-              baseHue={120}
-              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-            >
-              <TextGenerateEffect words="All of my Work Experience" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
-            </Vortex>
-
-            <Vortex
-              backgroundColor="black"
-              rangeY={800}
-              particleCount={500}
-              baseHue={120}
-              className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-            >
-              <Experience/>
-            </Vortex>
-            
-          {/* <div className="max-w-7xl"> 
-            <Projects/>
-  
-          </div> */}
+    <FloatingNav navItems={navItems} />
+      <Hero/>
+      <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl" id="projects" />
+      <Projects/>
+      <TextGenerateEffect words="All of my Work Experience" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
+      <Experience/>
+      </Vortex>
       </div>
   )
 };
 
 export default Home;
-
+{/* <div className="max-w-7xl"> 
+            <Projects/>
+  
+          </div> */}
         
+{/* <Vortex
+              backgroundColor="black"
+              rangeY={800}
+              particleCount={150}
+              baseHue={120}
+              className=" relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"
+              //relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5
+              //flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full
+            > */}

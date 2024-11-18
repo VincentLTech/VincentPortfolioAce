@@ -7,8 +7,7 @@ import { Vortex } from './ui/vortex';
 
 const Projects = ()=>{ 
     return (
-        <div className="max-w-screen-2xl	"> 
-            
+        <div className="max-w-screen-2xl" id="projects"> 
             <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
                 {projects.map((item) => (
                     
@@ -53,15 +52,6 @@ const Projects = ()=>{
                     </div>
                 ))}
             </div>
-            <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
         </div>
     );
 }

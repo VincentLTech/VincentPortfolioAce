@@ -26,7 +26,7 @@ export const Vortex = (props: VortexProps) => {
   const rangeY = props.rangeY || 100;
   const baseTTL = 50;
   const rangeTTL = 150;
-  const baseSpeed = props.baseSpeed || 0.0;
+  const baseSpeed = props.baseSpeed || -1.0;
   const rangeSpeed = props.rangeSpeed || 1.5;
   const baseRadius = props.baseRadius || 1;
   const rangeRadius = props.rangeRadius || 2;
@@ -243,15 +243,15 @@ export const Vortex = (props: VortexProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         ref={containerRef}
-        className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center"
+        className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center "
       >
-        <canvas ref={canvasRef}></canvas>
+        <canvas ref={canvasRef} className="h-full"></canvas>
+        {/* this took god knows forever */}
         
       </motion.div>
 
       <div className={cn("relative z-10", props.className)}>
         {props.children}
-        
       </div>
       
     </div>
