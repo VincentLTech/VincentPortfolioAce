@@ -7,7 +7,6 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 
 import { Vortex } from "@/components/ui/vortex";
 import { AuroraBackground } from "../components/ui/aurora-background"
-import { Spotlight } from "@/components/ui/Spotlight";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import Hero from "@/components/Hero";

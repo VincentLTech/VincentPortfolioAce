@@ -39,16 +39,7 @@ export default {
           },
         },
         // ////////////////////////////////////////////////////////////////////////////////////////
-        spotlight: {
-          "0%": {
-            opacity: 0,//dont mind the error message here
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          "100%": {
-            opacity: 1,//dont mind the error message here
-            transform: "translate(-50%,-40%) scale(1)",
-          },
-        },
+        
       },
       colors: {
         background: "var(--background)",
