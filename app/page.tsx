@@ -2,18 +2,13 @@
 
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-import { navItems } from "@/data/navItems";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 import { Vortex } from "@/components/ui/vortex";
-import { AuroraBackground } from "../components/ui/aurora-background"
-import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import Hero from "@/components/Hero";
 // import Tools from "@/components/Tools";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
-import MyTimeline from "@/components/MyTimeline";
 
 import { motion } from "framer-motion";
 import { main } from "framer-motion/client";
