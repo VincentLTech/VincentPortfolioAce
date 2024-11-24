@@ -11,7 +11,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import Hero from "@/components/Hero";
-import Tools from "@/components/Tools";
+// import Tools from "@/components/Tools";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import MyTimeline from "@/components/MyTimeline";
