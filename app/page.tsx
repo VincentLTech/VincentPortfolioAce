@@ -10,8 +10,8 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 
-import { motion } from "framer-motion";
-import { main } from "framer-motion/client";
+// import { motion } from "framer-motion";
+// import { main } from "framer-motion/client";
 
 // import Grid from "@/components/Grid";
 // import Footer from "@/components/Footer";
@@ -39,7 +39,7 @@ const Home = () => {
 
     {/* <FloatingNav navItems={navItems} /> */}
       <Hero/>
-      <TextGenerateEffect words="A small selection of my skills" className="text-center text-[320px] md:text-5xl lg:text-8xl"/>
+      {/* <TextGenerateEffect words="A small selection of my skills" className="text-center text-[320px] md:text-5xl lg:text-8xl"/> */}
       {/* <Tools/> */}
       <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl"/>
       

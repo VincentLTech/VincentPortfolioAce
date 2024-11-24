@@ -2,11 +2,7 @@
 
 "use client";
 import React from 'react';
-import { motion } from "framer-motion";
-import { Boxes } from "./ui/background-boxes";
-import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { Vortex } from './ui/vortex';
 const Hero = () => {
     return (
         <div className="flex justify-center relative my-20 z-10">

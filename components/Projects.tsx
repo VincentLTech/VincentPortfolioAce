@@ -2,8 +2,6 @@
 import React from "react";
 import { PinContainer } from "../components/ui/3d-pin";
 import {projects} from '@/data/projects';
-import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { Vortex } from './ui/vortex';
 
 const Projects = ()=>{ 
     return (
