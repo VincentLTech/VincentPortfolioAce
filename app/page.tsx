@@ -11,6 +11,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 
 import Hero from "@/components/Hero";
+import Tools from "@/components/Tools";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import MyTimeline from "@/components/MyTimeline";
@@ -30,8 +31,8 @@ const Home = () => {
     <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
     <Vortex
       backgroundColor="black"
-      rangeY={1800}
-      particleCount={750}
+      rangeY={800}
+      particleCount={1250}
       baseHue={120}
       className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       // flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full
@@ -42,14 +43,17 @@ const Home = () => {
     > 
     <br/>
 
-    <FloatingNav navItems={navItems} />
+    {/* <FloatingNav navItems={navItems} /> */}
       <Hero/>
-      <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl" id="projects" />
+      <TextGenerateEffect words="A small selection of my skills" className="text-center text-[320px] md:text-5xl lg:text-8xl"/>
+      {/* <Tools/> */}
+      <TextGenerateEffect words="A small selection of recent projects" className="text-center text-[320px] md:text-5xl lg:text-8xl"/>
+      
       <Projects/>
       <TextGenerateEffect words="All of my Work Experience" className="text-center text-[320px] md:text-5xl lg:text-8xl" />
       <Experience/>
       </Vortex>
-      </div>
+    </div>
   )
 };
 

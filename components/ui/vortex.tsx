@@ -29,7 +29,7 @@ export const Vortex = (props: VortexProps) => {
   const baseSpeed = props.baseSpeed || -1.0;
   const rangeSpeed = props.rangeSpeed || 1.5;
   const baseRadius = props.baseRadius || 1;
-  const rangeRadius = props.rangeRadius || 2;
+  const rangeRadius = props.rangeRadius || 1;
   const baseHue = props.baseHue || 220;
   const rangeHue = 100;// make it rainbow
   const noiseSteps = 3;
